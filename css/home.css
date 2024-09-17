@@ -1,38 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .layout-grid {
     margin: 0 auto;
     width: 100%;
     max-width: 992px;
     /* border: 3px solid white; */
 }
-
-
 html {
     width: 100%;
     height: 100%;
 }
-
 body {
     background-color: aliceblue;
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-wrap: wrap;
-
 }
-
 header {
     background-color: #202529;
     height: 100px;
     width: 100%;
     color: white;
-
     display: flex;
     justify-content: center;
 }
@@ -44,33 +36,84 @@ header {
     justify-content: space-between;
     height: 100%;
 }
-
 .section-flex {
     width: 100%;
     background-color: aliceblue;
 }
-
 header nav {
     width: 350px;
     height: 100%;
     /* border: 3px solid white; */
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 header nav a {
     color: white;
     /* font-family: ; */
     text-decoration: none;
 }
 
+nav a:hover {
+    color: rgb(0, 255, 251);
+    font-size: smaller;
+    text-shadow: 0px 5px 2.5px black;
+}
+
 main {
     width: 100%;
     height: 80%;
     /* background-color: blue; */
+}
 
+#banner {
+    /* background-color: #4869DF; */
+    background-image: linear-gradient(to right, #2d3f8e, #3e90da);
+    width: 100%;
+    height: 570px;
+}
+
+.banner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-banner {
+    background-color: #202529;
+    color: white;
+    height: 50px;
+    width: 180px;
+    border-radius: 7px;
+    font-size: 22px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.texto-cabecalho {
+    width: 450px;
+    height: 250px;
+    color: white;
+    /* border: 2px solid black; */
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.texto-cabecalho h1 {
+    font-size: 35px;
+}
+
+.texto-cabecalho p {
+    font-size: 20px;
+}
+
+.banner-flex img {
+    width: 500px;
+    height: 100%;
+    margin-top: 73px;
 }
 
 section {
@@ -78,14 +121,14 @@ section {
     /* background-color: #707070; */
 }
 
-.section-flex h1 {
+.section-flex h1 
+.section-flex h2 {
     text-align: center;
     width: 100%;
     height: 50px;
     margin-top: 20px;
     font-family: "Montserrat", sans-serif;
 }
-
 .section-flex article {
     width: 285px;
     height: 400px;
@@ -97,6 +140,7 @@ section {
     text-align: center;
     box-shadow: 2px 2px 7px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .bibliotec-flex {
@@ -104,7 +148,6 @@ section {
     justify-content: space-around;
     margin-top: 50px;
 }
-
 section article img {
     width: auto;
     height: 85px;
@@ -112,7 +155,8 @@ section article img {
     /* margin-top: -25px; */
 }
 
-section article h2 {
+section article h2 
+section article h3 {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -120,27 +164,58 @@ section article h2 {
     font-weight: 900;
     font-family: "Montserrat", sans-serif;
 }
-
 section article p {
     color: gray;
     font-weight: 700;
     font-size: medium;
 }
-
 .borda {
     border: 4px solid aqua;
     border-radius: 44px;
     margin-top: -35px;
+    margin-top: -55px;
     height: 85px;
     background-color: aliceblue;
 }
-
 hr {
     border-color: aqua;
     box-sizing: border-box;
     width: 20%;
     margin-left: 40%;
     border: 2px solid aqua;
+}
+
+.acesso-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#acesso {
+    background-color: #3691d8;
+}
+
+#acesso img {
+    width: 490px;
+
+}
+
+.texto-acesso {
+    color: aliceblue;
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.texto-acesso h2 {
+    font-size: 25px;
+}
+
+.texto-acesso p {
+    font-size: 20px;
 }
 
 .livros {
@@ -155,35 +230,39 @@ hr {
 
 }
 
-.livros h1 {
+.livros h1 
+.livros h2 {
     text-align: center;
     width: 100%;
     height: 50px;
     margin-top: 20px;
     font-family: "Montserrat", sans-serif;
 }
-
 .capas-livros {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
-
 .capas-livros img {
     width: 250px;
     height: 300px;
 }
-
 .capas-livros h3,
 .capas-livros h4,
 .capas-livros p {
     padding: 5px;
     text-align: center;
 }
-
 .capas-livros h3 {
     text-transform: uppercase;
 
+}
+
+.capas-livros p {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: end;
 }
 
 .logo-footer {
@@ -194,28 +273,24 @@ hr {
     width: 210px;
     height: auto;
 }
-
 footer {
     height: 100%;
     width: 100%;
     background-color: #202529;
     padding: 20px;
 }
-
 .footer-flex {
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
     justify-content: space-between;
 }
-
 footer nav {
     display: flex;
     /* align-items: center;
     justify-content: space-between; */
     flex-wrap: wrap;
 }
-
 footer h4 {
     display: flex;
     /* align-items: center;
@@ -227,13 +302,13 @@ footer h4 {
 
 .footer-flex article {
     
+
     display: flex;
     /* text-align: center; */
     /* border: 2px solid black; */
     justify-content: space-between;
     margin-bottom: 40px;
 }
-
 .links a {
     color: white;
     display: flex;
@@ -241,7 +316,6 @@ footer h4 {
     margin-bottom: 10px;
     text-decoration: none;
 }
-
 footer hr {
     margin-top: 20px;
     box-sizing: border-box;
@@ -250,7 +324,6 @@ footer hr {
     margin-right: 0%;
     border: 1px solid gray;
 }
-
 .redes-sociais {
     display: flex;
     align-items: center;
@@ -258,7 +331,6 @@ footer hr {
     flex-direction: row;
     margin-right: 10%;
 }
-
 /* .conteudo article {
     /* display: flex;
     justify-content: space-between;
@@ -267,13 +339,11 @@ footer hr {
     margin-right: 10px;
 }
  */
-
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .informacoes-rodape {
     color: white;
     padding: 20px;
@@ -283,20 +353,17 @@ footer hr {
     margin: 20px;
     margin-left: 15%;
 }
-
 .conteudo article nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-right: 3%;
 }
-
 .footer-nav {
     display: flex;
     justify-content: space-between;
     width: 500px;
 }
-
 /* .imagens-footer {
     width: 25px;
     display: flex;
