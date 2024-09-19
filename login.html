@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Bibliotec</title>
     <link rel="stylesheet" href="css/login.css">
+    <style>
+        body {
+            background-size: 100%;
+            background-image: url(./imagens/login-bk-desktop.png);
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="layout-grid header-flex">
             <img src="./imagens/logo-desktop.svg" alt="Logo da marca da BiblioTec">
             <nav>
+                <a href="file:///C:/Users/50457069856/Desktop/BIBLIO-TEC/index.html#"><img src="./imagens/exit.png" alt=""></a>
                 <a href="#">Quem somos</a>
                 <a href="#">Nosso acervo</a>
                 <a href="#">Login</a>
@@ -18,20 +27,23 @@
         </div>
     </header>
     <main>
-        <form action="">
-                <div class="layout-grid ">
-                    <h1>Entre na Biblio Tec</h1>
-                    <div class="preencher-dados"> 
-                        <label for="e-mail">E-mail</label>
-                        <input type="text" id="e-mail" name="e-mail">
-                    </div>
-                    <div class="preencher-dados">
-                        <label for="senha">Senha</label>
-                        <input type="text" id="senha" name="senha">
-                    </div>
+        <div class="layout-grid ">
+            <form action="">
+                <h1>Entre na Biblio Tec</h1>
+                <div class="preencher-dados">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" placeholder="henrique@xxxx">
                 </div>
-        </form>
+                <div class="preencher-dados">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="xxxxxx">
+                    <a href="#">esqueci a senha</a>
+                </div>
+                <button class="logar">Entrar</button>
+            </form>
+            </div>
 
     </main>
 </body>
+
 </html>
